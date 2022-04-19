@@ -1,41 +1,25 @@
 programa
 {
-	
+	inclua biblioteca Texto --> txt
+ 
 	funcao inicio()
 	{
-		
-		inteiro repete
-		
-		somatorio()
 
-		escreva("\nGostaria de jogar novamente?\n 1- SIM? \t 2 - NÃO? ")
-		leia(repete)
+		cadeia nome
 				
-
-		escolha(repete){
-			caso 1:
-			inicio()
-
-			caso 2:
-			pare
-			
+		faca
+		{
+			escreva("Digite seu nome: ")
+			leia (nome)
+			linha()
 		}
-	}
-	
-	funcao somatorio()
-	{
-		real a, b, soma
+		enquanto(txt.numero_caracteres(nome) < 1)
+		enquanto(txt.numero_caracteres(nome) > 0)
+		{
+		pare
+		}
+		escreva(nome)
 		
-		linha()
-		escreva("Digite um número A: ")
-		leia (a)
-		linha()
-		escreva("Digite um número B: ")
-		leia(b)
-		linha()
-		soma = a + b
-		escreva("A soma de A com B é " ,soma)
-		linha()
 	}
 	
 	funcao linha()
@@ -51,7 +35,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 376; 
+ * @POSICAO-CURSOR = 66; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
